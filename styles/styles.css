@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+.logo {
+    width: 120px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    transition: .25s;
+}
+li > a:hover {
+    border: 1px solid white;
+    border-radius: 7px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#trigger:checked ~ .openEmailText {
+    transition: .3s;
+    opacity: 1;
+    visibility: visible;
+    animation: fadeInAndOut 2s forwards;
+}
+
+li > span { 
+    position: absolute;
+    top: 8rem; 
+    right: 34%; 
+    font-size: 1.2rem;
+    line-height: 110%;
+    color: white;
+    opacity: 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@keyframes fadeInAndOut {
+    0% {
+        opacity: 0;
+    }
+    10% {  
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

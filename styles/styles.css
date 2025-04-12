@@ -1,10 +1,13 @@
 /* CSS Document */
 /* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Inter", "Arial", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background-image: url("../images/tile.png");
+    background-repeat: repeat;
 }
 .graphic {
     display: flex;
@@ -132,7 +135,7 @@ main {
     margin-top: 50px;
     margin-bottom: 50px;
     background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
 
@@ -160,6 +163,13 @@ figure > img {
     display: block;
     margin: auto;
     width: 50%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+figure > img:hover {
+    width: 75%;
+    transition: 1s;
 }
 
 table {
@@ -170,6 +180,28 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 5px;
+}
+
+th, td {
+    background-color: #eee;
+}
+
+th:hover, td:hover {
+    background-color: #fff;
+    transition: 0.1s;
+    animation: normal;
+}
+
+#aboutLists {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#aboutLists > div {
+    padding: 1rem;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes fadeInAndOut {

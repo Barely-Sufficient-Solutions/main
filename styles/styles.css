@@ -1,8 +1,72 @@
+/* CSS Document */
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+}
+.graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin: 0 auto;
+    object-fit: contain;
+    max-width: 90%;  
+    height: auto;
+} #graphicTitle {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    position: absolute;
+    top: 40rem;
+}
+.indexCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-content: space-evenly;
+    justify-content: center;
+    margin: 0 auto;
+    object-fit: contain;
+    flex: 1 1 calc(20% - 1rem); /* 3 cards per row with space between */
+}
+.indexPageCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 300px;
+    min-height: 150px;
+
+}
+.cardLogo {
+    display: flex;
+    justify-content: center; 
+    max-width: 40%;  
+    height: auto;   
+    padding-bottom: 1rem;
+}
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    min-width: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.cardList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    flex: 1;
+    color: #333;
+}
+.cardIndexPage {
+    max-width: 100px;
 }
 
 header {
@@ -16,7 +80,8 @@ nav ul {
     padding: 0;
 }
 .logo {
-    width: 200px;
+    object-fit: contain;
+    max-width: 25rem;
     height: auto;
     vertical-align: middle;
     margin-right: 10px;
@@ -28,6 +93,7 @@ nav ul li {
 }
 
 nav ul li a {
+    padding-top: 100rem;
     font-size: 1.2rem;
     color: white;
     text-decoration: none;
@@ -61,7 +127,7 @@ li > span {
 
 main {
     padding: 20px;
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -73,7 +139,7 @@ main {
 footer {
     display: inline-flex;
     justify-content: center;
-    gap: 100px;
+    gap: 10rem;
     align-items: center;
     padding: 10px;
     background: #333;

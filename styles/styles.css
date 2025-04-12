@@ -19,7 +19,7 @@ nav ul {
     padding: 0;
 }
 .logo {
-    width: 120px;
+    width: 200px;
     height: auto;
     vertical-align: middle;
     margin-right: 10px;
@@ -74,13 +74,19 @@ main {
 }
 
 footer {
-    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
     padding: 10px;
     background: #333;
     color: white;
     position: static;
     width: 100%;
     bottom: 0;
+}
+footer a {
+    color: white;
 }
 
 figcaption {
@@ -146,3 +152,84 @@ th:hover, td:hover {
         opacity: 0;
     }
 }
+
+
+/*jobs page*/
+
+#jobs_page {
+    display: flex; /* turns the container into a flexbox */
+    justify-content: center; /* centers the two job cards horizontally */
+    gap: 30px; /* creates 30px space between the two cards */
+    margin: 40px auto; /* adds margin above and below, centers it horizontally */
+    flex-wrap: wrap; /* allows cards to wrap under each other on small screens */
+    max-width: 1200px; /* limits maximum width to avoid stretching too far */
+}
+
+#data_analyst, #software_engineer {
+    flex: 1; /* makes each card take equal width */
+    background: linear-gradient(145deg, #1e1e2f, #2c2f33); /* sets a dark navy gradient background */
+    color: #dcdcdc; /* light gray text color */
+    padding: 30px; /* adds padding inside each card */
+    border-radius: 20px; /* rounds the corners of the cards */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* adds a dark shadow for depth */
+    min-width: 320px; /* prevents the card from getting too small on tiny screens */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* makes animations smooth for moving and shadows */
+    border: 1px solid #111; /* adds a thin dark border around cards */
+    position: relative; /* needed to position the glow effect absolutely inside card */
+    overflow: hidden; /* hides anything that spills out (like glow animations) */
+}
+
+#data_analyst::before, #software_engineer::before {
+    content: ""; /* creates an invisible element to use for hover glow */
+    position: absolute; /* positions it relative to the card */
+    top: -50%; /* moves it above the card */
+    left: -50%; /* moves it to the left of the card */
+    width: 200%; /* makes it huge to cover area for the glow */
+    height: 200%; /* same as width */
+    background: radial-gradient(circle at center, rgba(10, 88, 202, 0.2), transparent 70%); /* blue glow fading outwards */
+    transform: rotate(25deg); /* tilts the glow background */
+    transition: all 0.5s ease; /* smooth animation for glow appearing */
+    opacity: 0; /* makes the glow invisible at first */
+}
+
+#data_analyst:hover::before, #software_engineer:hover::before {
+    opacity: 1; /* makes the glow visible when you hover */
+}
+
+#data_analyst:hover, #software_engineer:hover {
+    transform: translateY(-10px) scale(1.02); /* lifts card up slightly and enlarges on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8); /* makes a bigger shadow when hovering */
+}
+
+#jobs_page h2 {
+    color: #0a58ca; /* navy blue color for the main title */
+    font-size: 2rem; /* makes title bigger */
+    margin-bottom: 20px; /* space under title */
+    border-bottom: 2px solid #0a58ca; /* adds a colored underline */
+    padding-bottom: 10px; /* space between text and underline */
+}
+
+#jobs_page h3, #jobs_page h4 {
+    color: #17a2b8; /* light blue color for subheadings */
+    margin-top: 15px; /* space above subheadings */
+    font-size: 1.3rem; /* slightly bigger subheading text */
+}
+
+#jobs_page ul {
+    padding-left: 20px; /* moves bullet list inwards */
+    margin-top: 10px; /* space above the list */
+    list-style-type: square; /* changes bullet points to squares */
+}
+
+#jobs_page ul li {
+    margin-bottom: 8px; /* space between each bullet item */
+    line-height: 1.5; /* taller lines for better reading */
+}
+
+@media (max-width: 900px) {
+    #jobs_page {
+        flex-direction: column; /* stacks cards vertically on small screens */
+        align-items: center; /* centers the cards when stacked */
+    }
+}
+

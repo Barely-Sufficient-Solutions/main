@@ -363,8 +363,8 @@ select:focus {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 0.5rem;
-  }
-  .skillsContainer label {
+}
+.skillsContainer label {
     background-color: #f1f1f1;
     border-radius: 6px;
     padding: 8px;
@@ -373,11 +373,33 @@ select:focus {
     gap: 0.5rem;
     cursor: pointer;
     transition: background-color 0.2s;
-  }
-  .skillsContainer label:hover {
+}
+.skillsContainer label:hover {
     background-color: #e2e6ea;
-  }
-  
-  
-
-  
+}
+.applyInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.submitContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.applyInput {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.applyInput:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}

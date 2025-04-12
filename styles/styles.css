@@ -45,28 +45,29 @@ body {
 
 }
 .cardLogo {
-    display: flex;
-    justify-content: center; 
-    max-width: 40%;  
+    display: flex; 
+    max-width: 50%;  
     height: auto;   
-    padding-bottom: 1rem;
 }
 .cardHeader {
     display: flex;
     align-items: center;
     gap: 1rem;
     flex: 1;
-    min-width: 200px;
+    max-width: 100px;
     flex-direction: column;
     align-items: flex-start;
 }
 .cardList {
-    list-style-type: none;
-    padding: 0;
+    list-style: square;
+    min-width: 120px;
     margin: 0;
-    font-size: 1.2rem;
     flex: 1;
-    color: #333;
+    color: #EBEBEB;
+}
+.cardList > li{
+    padding: .3rem 0;
+    font-size: 1rem;
 }
 .cardIndexPage {
     max-width: 100px;

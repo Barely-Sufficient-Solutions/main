@@ -1021,8 +1021,8 @@ select {
 /* === About Page Additions === */
 .member,
 #aboutLists > div {
-  background-color: #2a2a3d; /* Match the dark theme */
-  color: #dcdcdc; /* Light text for readability */
+  background-color: #2a2a3d; 
+  color: #dcdcdc; 
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
@@ -1030,23 +1030,22 @@ select {
 }
 
 .member:hover {
-  transform: translateY(-4px); /* Card hover lift */
+  transform: translateY(-4px); /* hover lift */
 }
 
 .team dd {
-  color: #dcdcdc; /* Ensure contribution text is readable */
+  color: #dcdcdc; 
   font-size: 1.1rem;
   line-height: 1.5;
   margin-top: 0.5rem;
 }
 
 .team dt {
-  color: #0a58ca; /* Highlight names */
+  color: #0a58ca; 
   font-size: 1.3rem;
   font-weight: 700;
 }
 
-/* Make intro text in about page black for contrast against light background */
 main > section p:first-of-type,
 main > section p:nth-of-type(2) {
   color: #000;

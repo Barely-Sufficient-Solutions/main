@@ -880,7 +880,7 @@ select:focus {
 /* apply page enhancements */
 
 
-body {
+#applyBody {
   background-color: #1a1a2a; 
   color: #dcdcdc; 
   font-family: 'Inter', sans-serif; 

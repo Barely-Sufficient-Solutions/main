@@ -74,7 +74,7 @@ body {
     max-width: 100px;
 }
 
-.indexTitle {
+.mainTitle {
     text-align: center;
     font-size: 2rem;
     color: #333;
@@ -176,11 +176,6 @@ figure > img {
     border-radius: 10px;
 }
 
-figure > img:hover {
-    width: 60%;
-    transition: .2s ease-in;
-}
-
 table {
     margin: auto;
 }
@@ -199,18 +194,6 @@ th:hover, td:hover {
     background-color: #fff;
     transition: 0.1s;
     animation: normal;
-}
-
-#aboutLists {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#aboutLists > div {
-    padding: 1rem;
-    background-color: #eee;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes fadeInAndOut {
@@ -312,6 +295,7 @@ th:hover, td:hover {
 .jobsLink {
     float: right;
     color: #000038;
+    padding-top: 2.6em;
 }
 form {
     margin: auto;
@@ -403,3 +387,49 @@ select:focus {
     transform: translateY(-2px);
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
 }
+
+/* about specific styles */
+#aboutLists {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#aboutLists > div {
+    padding: 1rem;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.team {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+  
+  .member {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .member:hover {
+    transform: translateY(-4px);
+  }
+  
+  dt {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  dd {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+  }

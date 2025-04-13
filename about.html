@@ -9,13 +9,13 @@
 <body>
     <header>
         <!--<h1>EDC IT Solutions</h1> -->
-        <img src="images/logo2.png" alt="Logo" class="logo">
+        <img src="images/logo3.svg" alt="Logo" class="logo">
         <nav>
             <ul>
-                <li><a href="#">Home🏡</a></li>
-                <li><a href="#">Jobs⚒️</a></li>
-                <li><a href="#">Apply✅</a></li>
-                <li><a href="#">About👯</a></li>
+                <li><a href="index.html">Home🏡</a></li>
+                <li><a href="jobs.html">Jobs⚒️</a></li>
+                <li><a href="apply.html">Apply✅</a></li>
+                <li><a href="about.html">About👯</a></li>
                 <li><a href="#">Email📩</a></li>
             </ul>
         </nav>
@@ -23,23 +23,26 @@
 
     <main>
         <section>
-            <h2>About Us</h2>
+            <h2 class="mainTitle">About Us</h2>
             <p>Here at Barely Sufficient Solutions, we believe in producing business solutions that are... barely sufficient...? Do not get your expectations overly high.</p>
             <p>Here is some information about the members of Barely Sufficient Solutions!</p>
-            <div id="aboutLists">
-                <div>
-                    <h3>Class Info:</h3>
-                    <ul>
-                        <li>Tutorial Week Date:</li>
+            <section class="indexCards">
+                <section id="data_analyst" class="indexPageCard">
+                    <div class="cardHeader"><h3>Class Info:</h3></div>
+                    <section class="cardList">
                         <ul>
-                            <li>Monday</li>
+                            <li>Tutorial Week Date:</li>
+                            <ul>
+                                <li>Monday</li>
+                            </ul>
+                            <li>Tutorial Time:</li>
+                            <ul>
+                                <li>2:30PM - 4:30PM</li>
+                            </ul>
                         </ul>
-                        <li>Tutorial Time:</li>
-                        <ul>
-                            <li>2:30PM - 4:30PM</li>
-                        </ul>
-                    </ul>
-                </div>
+                    </section>
+                </section>
+                <section id="data_analyst" class="indexPageCard">
                 <div>
                     <h3>Student IDs:</h3>
                     <ul>
@@ -48,29 +51,35 @@
                         <li>David Clonan: 105915439</li>
                     </ul>
                 </div>
-            </div>
+            </section>
             <p>For BSS to run, we are managed by tutor <strong>Enrique Nicolás Ketterer!</strong></p>
         </section>
         <section>
-            <h2>Contributions</h2>
-            <dl>
-                <dt>Charlie</dt>
-                <dd>CSS styling, Jira management, Git repository</dd>
-                <dt>Ella</dt>
-                <dd>Jobs page, Apply page</dd>
-                <dt>David</dt>
-                <dd>About page, some CSS</dd>
+            <h2 class="mainTitle">Contributions</h2>
+            <dl class="team">
+                <div class="member">
+                    <dt>Charlie</dt>
+                    <dd>CSS styling, Jira management, Git repository, Index, template</dd>
+                </div>
+                <div class="member">
+                    <dt>Ella</dt>
+                    <dd>Jobs page, Apply page</dd>
+                </div>
+                <div class="member">
+                    <dt>David</dt>
+                    <dd>About page, some CSS</dd>
+                </div>
             </dl>
         </section>
         <section>
-            <h2>Group Photo</h2>
+            <h2 class="mainTitle">Group Photo</h2>
             <figure>
                 <img class="groupPhoto" src="https://placehold.co/600x400" alt="A photo of all three group members.">
                 <figcaption>The group!</figcaption>
             </figure>
         </section>
         <section>
-            <h2>About Each Member</h2>
+            <h2 class="mainTitle">About Each Member</h2>
             <table>
                 <tr>
                     <th colspan="99">Members' Interests</th>
@@ -83,9 +92,9 @@
                 </tr>
                 <tr>
                     <th>Charlie</th>
-                    <td>Lorem ipsum</td>
-                    <td>Lorem ipsum</td>
-                    <td>Lorem ipsum</td>
+                    <td>FIFA 15</td>
+                    <td>Inglorious Bastards</td>
+                    <td>Cooking</td>
                 </tr>
                 <tr>
                     <th>Ella</th>

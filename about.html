@@ -8,29 +8,28 @@
 </head>
 <body>
     <header>
+        <!--<h1>EDC IT Solutions</h1> -->
         <img src="images/logo3.svg" alt="Logo" class="logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home🏡</a></li>
                 <li><a href="jobs.html">Jobs⚒️</a></li>
-                <li><a href="apply.html">Apply✅</a>
-                <span class="openEmailText">Opens email to "info@barelysufficientsolutions.com"</span>
-                </li>
+                <li><a href="apply.html">Apply✅</a></li>
                 <li><a href="about.html">About👯</a></li>
-                <li><a id="emailButton" href="#">Email📩</a></li>
+                <li><a href="#">Email📩</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>About Us</h2>
+            <h2 class="mainTitle">About Us</h2>
             <p>Here at Barely Sufficient Solutions, we believe in producing business solutions that are... barely sufficient...? Do not get your expectations overly high.</p>
             <p>Here is some information about the members of Barely Sufficient Solutions!</p>
-            <section class="indexCards"> <!-- Global cards container for layout + global styles -->
-                <section id="data_analyst" class="indexPageCard"> <!-- Individual card for each person-->
-                    <div class="cardHeader"><h3>Class Info:</h3></div> <!-- Card header with title -->
-                    <section class="cardList"> <!-- Card list for content -->
+            <section class="indexCards">
+                <section id="data_analyst" class="indexPageCard">
+                    <div class="cardHeader"><h3>Class Info:</h3></div>
+                    <section class="cardList">
                         <ul>
                             <li>Tutorial Week Date:</li>
                             <ul>
@@ -53,30 +52,38 @@
                     </ul>
                 </div>
             </section>
-            <p>For BSS to run, we are managed by the <strong>mighty</strong> tutor <strong>Enrique Nicolás Ketterer!</strong></p>
+            <p>For BSS to run, we are managed by tutor <strong>Enrique Nicolás Ketterer!</strong></p>
         </section>
         <section>
-            <h2>Contributions</h2>
-            <dl>
-                <dt>Charlie</dt>
-                <dd>CSS styling, Jira management, Git repository</dd>
-                <dt>Ella</dt>
-                <dd>Jobs page, Apply page</dd>
-                <dt>David</dt>
-                <dd>About page, some CSS</dd>
+            <h2 class="mainTitle">Contributions</h2>
+            <dl class="team">
+                <div class="member">
+                    <dt>Charlie</dt>
+                    <dd>CSS styling, Jira management, Git repository, Index, template</dd>
+                </div>
+                <div class="member">
+                    <dt>Ella</dt>
+                    <dd>Jobs page, Apply page</dd>
+                </div>
+                <div class="member">
+                    <dt>David</dt>
+                    <dd>About page, some CSS</dd>
+                </div>
             </dl>
         </section>
         <section>
-            <h2>Group Photo</h2>
+            <h2 class="mainTitle">Group Photo</h2>
             <figure>
                 <img class="groupPhoto" src="https://placehold.co/600x400" alt="A photo of all three group members.">
                 <figcaption>The group!</figcaption>
             </figure>
         </section>
         <section>
-            <h2>About Each Member</h2>
+            <h2 class="mainTitle">About Each Member</h2>
             <table>
-                <caption>Members' Interests</caption>
+                <tr>
+                    <th colspan="99">Members' Interests</th>
+                </tr>
                 <tr>
                     <th>Favourite:</th>
                     <th>Game</th>
@@ -85,9 +92,9 @@
                 </tr>
                 <tr>
                     <th>Charlie</th>
-                    <td>Lorem ipsum</td>
-                    <td>Lorem ipsum</td>
-                    <td>Lorem ipsum</td>
+                    <td>FIFA 15</td>
+                    <td>Inglorious Bastards</td>
+                    <td>Cooking</td>
                 </tr>
                 <tr>
                     <th>Ella</th>

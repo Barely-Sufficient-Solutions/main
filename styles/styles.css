@@ -439,3 +439,583 @@ select:focus {
     color: #555;
     line-height: 1.6;
   }
+
+  /* CSS Document */
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body {
+    font-family: "Inter", "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url("../images/tile.png");
+    background-repeat: repeat;
+}
+.graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin: 0 auto;
+    object-fit: contain;
+    max-width: 90%;  
+    height: auto;
+} #graphicTitle {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    position: absolute;
+    top: 40rem;
+}
+.indexCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-content: space-evenly;
+    justify-content: center;
+    margin: 0 auto;
+    object-fit: contain;
+    flex: 1 1 calc(20% - 1rem); /* 3 cards per row with space between */
+}
+.indexPageCard {
+    padding: 0px 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 300px;
+    min-height: 150px;
+
+}
+.cardLogo {
+    display: flex; 
+    max-width: 50%;  
+    height: auto;   
+}
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    max-width: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.cardList {
+    list-style: square;
+    min-width: 120px;
+    margin: 0;
+    flex: 1;
+    color: #EBEBEB;
+}
+.cardList > li{
+    padding: .3rem 0;
+    font-size: 1rem;
+}
+.cardIndexPage {
+    max-width: 100px;
+}
+
+.mainTitle {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+.logo {
+    object-fit: contain;
+    max-width: 25rem;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    padding-top: 100rem;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    transition: .25s;
+}
+li > a:hover {
+    border: 1px solid white;
+    border-radius: 7px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#trigger:checked ~ .openEmailText {
+    transition: .3s;
+    opacity: 1;
+    visibility: visible;
+    animation: fadeInAndOut 2s forwards;
+}
+
+li > span { 
+    position: absolute;
+    top: 8rem; 
+    right: 34%; 
+    font-size: 1.2rem;
+    line-height: 110%;
+    color: white;
+    opacity: 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+footer {
+    display: inline-flex;
+    justify-content: center;
+    gap: 10rem;
+    align-items: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
+footer a {
+    color: white;
+}
+
+figcaption {
+    text-align: center;
+}
+
+figure > img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+table {
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th, td {
+    background-color: #eee;
+}
+
+th:hover, td:hover {
+    background-color: #fff;
+    transition: 0.1s;
+    animation: normal;
+}
+
+@keyframes fadeInAndOut {
+    0% {
+        opacity: 0;
+    }
+    10% {  
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*jobs page*/
+
+#jobs_page {
+    display: flex; /* turns the container into a flexbox */
+    justify-content: center; /* centers the two job cards horizontally */
+    gap: 30px; /* creates 30px space between the two cards */
+    margin: 40px auto; /* adds margin above and below, centers it horizontally */
+    flex-wrap: wrap; /* allows cards to wrap under each other on small screens */
+    max-width: 1200px; /* limits maximum width to avoid stretching too far */
+}
+
+#data_analyst, #software_engineer {
+    flex: 1; /* makes each card take equal width */
+    background: linear-gradient(145deg, #1e1e2f, #2c2f33); /* sets a dark navy gradient background */
+    color: #dcdcdc; /* light gray text color */
+    padding: 20px; /* adds padding inside each card */
+    border-radius: 20px; /* rounds the corners of the cards */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* adds a dark shadow for depth */
+    min-width: 320px; /* prevents the card from getting too small on tiny screens */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* makes animations smooth for moving and shadows */
+    border: 1px solid #111; /* adds a thin dark border around cards */
+    position: relative; /* needed to position the glow effect absolutely inside card */
+    overflow: hidden; /* hides anything that spills out (like glow animations) */
+}
+
+#data_analyst::before, #software_engineer::before {
+    content: ""; /* creates an invisible element to use for hover glow */
+    position: absolute; /* positions it relative to the card */
+    top: -50%; /* moves it above the card */
+    left: -50%; /* moves it to the left of the card */
+    width: 200%; /* makes it huge to cover area for the glow */
+    height: 200%; /* same as width */
+    background: radial-gradient(circle at center, rgba(10, 88, 202, 0.2), transparent 70%); /* blue glow fading outwards */
+    transform: rotate(25deg); /* tilts the glow background */
+    transition: all 0.5s ease; /* smooth animation for glow appearing */
+    opacity: 0; /* makes the glow invisible at first */
+}
+
+#data_analyst:hover::before, #software_engineer:hover::before {
+    opacity: 1; /* makes the glow visible when you hover */
+}
+
+#data_analyst:hover, #software_engineer:hover {
+    transform: translateY(-10px) scale(1.02); /* lifts card up slightly and enlarges on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8); /* makes a bigger shadow when hovering */
+}
+
+#jobs_page h2 {
+    color: #0a58ca; /* navy blue color for the main title */
+    font-size: 2rem; /* makes title bigger */
+    margin-bottom: 20px; /* space under title */
+    border-bottom: 2px solid #0a58ca; /* adds a colored underline */
+    padding-bottom: 10px; /* space between text and underline */
+}
+
+#jobs_page h3, #jobs_page h4 {
+    color: #17a2b8; /* light blue color for subheadings */
+    margin-top: 15px; /* space above subheadings */
+    font-size: 1.3rem; /* slightly bigger subheading text */
+}
+
+#jobs_page ul {
+    padding-left: 20px; /* moves bullet list inwards */
+    margin-top: 10px; /* space above the list */
+    list-style-type: square; /* changes bullet points to squares */
+}
+
+#jobs_page ul li {
+    margin-bottom: 8px; /* space between each bullet item */
+    line-height: 1.5; /* taller lines for better reading */
+}
+
+@media (max-width: 900px) {
+    #jobs_page {
+        flex-direction: column; /* stacks cards vertically on small screens */
+        align-items: center; /* centers the cards when stacked */
+    }
+}
+
+/* Apply Page Specific Styles */
+.jobsLink {
+    float: right;
+    color: #000038;
+    padding-top: 2.6em;
+}
+form {
+    margin: auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+legend {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus {
+    transition: ease-in-out 0.3s;
+    border: 1px solid #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.2);
+}
+.flex-row {
+    display: flex;
+    gap: 1rem;
+}
+.flex-row > div {
+    flex: 1;
+}
+.skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+}
+.skillsContainer label {
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.skillsContainer label:hover {
+    background-color: #e2e6ea;
+}
+.applyInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.submitContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.applyInput {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.applyInput:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* about specific styles */
+#aboutLists {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#aboutLists > div {
+    padding: 1rem;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.team {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+  
+  .member {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .member:hover {
+    transform: translateY(-4px);
+  }
+  
+  dt {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  dd {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+  }
+
+
+/* apply page enhancements */
+
+
+body {
+  background-color: #1a1a2a; 
+  color: #dcdcdc; 
+  font-family: 'Inter', sans-serif; 
+  margin: 0; /* Removes default browser margin */
+  padding: 0; /* Removes default browser padding */
+}
+
+#openPositionsTitle {
+  color: #0a58ca; 
+  text-align: left; 
+  font-size: 2.8rem; 
+  margin: 2rem 0 1rem; /* More space around heading */
+  font-weight: 800; 
+  letter-spacing: 1px; 
+}
+
+form fieldset legend::after {
+  content: " ✏️"; /* pencil emoji */
+}
+
+form input[type="radio"] + label,
+form input[type="checkbox"] + label {
+  display: inline-block; /* Places labels next to inputs */
+  margin-right: 1rem; /* Spacing between options */
+  color: #dcdcdc; 
+  font-size: 1rem; 
+  font-weight: 500; 
+}
+
+form label[for="other_skill"] {
+  display: block; /* Puts on new line */
+  margin-top: 1rem; /* Adds spacing from previous content */
+  font-style: italic; 
+  color: #a0a0a0; 
+}
+
+.skillsContainer legend {
+  color: #ffffff; 
+  font-weight: bold; 
+  font-size: 1.4rem; 
+  padding: 0.4rem 0.75rem; /* Padding for visibility */
+  background-color: #0a58ca;
+  border-radius: 6px; /* Rounded edges */
+  margin-bottom: 1rem; /* Space below */
+  display: inline-block; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.skillsContainer label {
+  background-color: #1e1e2f; 
+  border: 1px solid #444; /* Subtle outline */
+  padding: 8px 12px; /* Better click area */
+  border-radius: 6px; /* Rounded style */
+  color: #dcdcdc; 
+  margin: 4px; /* Space around boxes */
+  display: inline-block; /* Inline formatting */
+  transition: background-color 0.2s ease; /* Smooth hover */
+}
+
+.skillsContainer label:hover {
+  background-color: #2c2f33; /* Lighter hover */
+}
+
+footer a:hover {
+  color: #17a2b8; /* Light blue on hover */
+  text-decoration: underline; /* Underlines links on hover */
+}
+
+.applyInput {
+  background: linear-gradient(to right, #0a58ca, #17a2b8); /* Gradient button */
+  color: white; 
+  border: none; /* No borders */
+  padding: 14px 32px; /* Space around text */
+  font-size: 1.2rem; 
+  border-radius: 50px; /* Round shape */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-position 0.5s ease; /* Smooth effects */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  background-size: 200% 100%; /* Animation size */
+  background-position: left center; /* Starts left */
+}
+
+.applyInput:hover {
+  transform: scale(1.05); /* Slight grow on hover */
+  background-position: right center; /* Animate gradient */
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4); /* Deeper shadow */
+}
+
+form {
+  background-color: #222233; 
+  padding: 2rem; /* Inner space */
+  margin: auto; /* Centered */
+  max-width: 900px; /* Form width */
+  border-radius: 16px; /* Round form */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Shadow */
+}
+
+fieldset {
+  background-color: #2a2a3d; 
+  border: 1px solid #444; /* Subtle border */
+  padding: 1rem; /* Padding inside */
+  border-radius: 10px; /* Rounded look */
+  margin-bottom: 1.5rem; /* Space between */
+}
+
+legend {
+  color: #ffffff;
+  font-weight: 600; 
+  font-size: 1.4rem; 
+  padding: 0.4rem 0.75rem; /* Padding */
+  background-color: #0a58ca; 
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5); /* Glow effect */
+}
+
+label {
+  color: #dcdcdc; 
+  margin-top: 10px; /* Space above */
+  display: block; /* Full width */
+  font-weight: 500; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+  background-color: #2c2f33; 
+  color: #dcdcdc; 
+  border: 1px solid #555; /* Border */
+  border-radius: 6px; /* Rounded */
+  padding: 10px; 
+  width: 100%; /* Full width */
+  margin-top: 6px; /* Space above */
+  margin-bottom: 15px; /* Space below */
+}
+
+
+

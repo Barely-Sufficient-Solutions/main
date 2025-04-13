@@ -27,7 +27,7 @@
         <h1 id="openPositionsTitle">Apply for our open position(s)</h1>
         <hr>
         
-        <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+        <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php"> <!-- Start of form including action and method of -->
             <fieldset>
                 <legend>Job Reference Number</legend>
                 <label for="referencenumber">Select a Job Reference Number:</label>
@@ -75,6 +75,8 @@
                     <option value="act">ACT</option>
                     <option value="tas">TAS</option>
                 </select>
+                <label for="postcode">Postcode:</label>
+                    <input type="text" name="postcode" id="postcode" pattern="\d{4}" required>
             </fieldset>
 
         <!---CONTACT DETAILS-->
@@ -92,19 +94,19 @@
             <div class="skillsContainer">
                 <fieldset> 
                     <legend>Skills</legend>
-                    <label><input type="checkbox" name="skills" value="html" required> HTML</label><br>
-                    <label><input type="checkbox" name="skills" value="css" required> CSS</label><br>
-                    <label><input type="checkbox" name="skills" value="javascript" required> JavaScript</label><br>
-                    <label><input type="checkbox" name="skills" value="python" required> Python</label><br>
-                    <label><input type="checkbox" name="skills" value="java" required> Java</label><br>
-                    <label><input type="checkbox" name="skills" value="sql" required> SQL</label><br>
-                    <label><input type="checkbox" name="skills" value="git" required> Git</label><br>
-                    <br>    
+                    <label><input type="checkbox" name="skills" value="html" required> HTML</label>
+                    <label><input type="checkbox" name="skills" value="css" required> CSS</label>
+                    <label><input type="checkbox" name="skills" value="javascript" required> JavaScript</label>
+                    <label><input type="checkbox" name="skills" value="python" required> Python</label>
+                    <label><input type="checkbox" name="skills" value="java" required> Java</label>
+                    <label><input type="checkbox" name="skills" value="sql" required> SQL</label>
+                    <label><input type="checkbox" name="skills" value="git" required> Git</label>
+                </fieldset>
             </div>
         <label>Other Skills: <input type="text" name="other_skill"></label><br>
             <br>
 
-        </fieldset>
+        
         <div class="submitContainer"><input type="submit" value='Apply✅' class="applyInput"/></div>
         </form>
     </main>

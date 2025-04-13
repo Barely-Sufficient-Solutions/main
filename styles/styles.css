@@ -1017,5 +1017,66 @@ select {
   margin-bottom: 15px; /* Space below */
 }
 
+/* === About Page Additions === */
+.member,
+#aboutLists > div {
+  background-color: #2a2a3d; /* Match the dark theme */
+  color: #dcdcdc; /* Light text for readability */
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.member:hover {
+  transform: translateY(-4px); /* Card hover lift */
+}
+
+.team dd {
+  color: #dcdcdc; /* Ensure contribution text is readable */
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.team dt {
+  color: #0a58ca; /* Highlight names */
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* Make intro text in about page black for contrast against light background */
+main > section p:first-of-type,
+main > section p:nth-of-type(2) {
+  color: #000;
+}
+
+table, th, td {
+  border: 1px solid #444;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+th {
+  background-color: #0a58ca;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  background-color: #2a2a3d;
+  color: #dcdcdc;
+}
+
+th:hover, td:hover {
+  background-color: #1e1e2f;
+  transition: 0.2s;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
 
 

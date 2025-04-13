@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
     <title>Apply</title>
 </head>
 <body>
@@ -79,16 +78,16 @@
                     <input type="text" name="postcode" id="postcode" pattern="\d{4}" required>
             </fieldset>
 
-        <!---CONTACT DETAILS-->
+    <!---CONTACT DETAILS-->
+        
+        <fieldset>
+            <legend>Contact Details</legend>
+                <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
             
-            <fieldset>
-                <legend>Contact Details</legend>
-                    <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
-                
-                <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" pattern="\d{8,12}" required>
-            </fieldset>
+            <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="\d{8,12}" required>
+        </fieldset>
 
         <!---skills-->
             <div class="skillsContainer">

@@ -1,5 +1,3 @@
-/* CSS Document */
-/* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
     box-sizing: border-box;
@@ -103,8 +101,7 @@ nav ul {
     padding: 0;
 }
 .logo {
-    object-fit: contain;
-    max-width: 25rem;
+    width: 200px;
     height: auto;
     vertical-align: middle;
     margin-right: 10px;
@@ -116,7 +113,6 @@ nav ul li {
 }
 
 nav ul li a {
-    padding-top: 100rem;
     font-size: 1.2rem;
     color: white;
     text-decoration: none;
@@ -150,7 +146,7 @@ li > span {
 
 main {
     padding: 20px;
-    max-width: 1200px;
+    max-width: 800px;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -162,7 +158,7 @@ main {
 footer {
     display: inline-flex;
     justify-content: center;
-    gap: 10rem;
+    gap: 100px;
     align-items: center;
     padding: 10px;
     background: #333;
@@ -187,6 +183,11 @@ figure > img {
     border-radius: 10px;
 }
 
+figure > img:hover {
+    width: 75%;
+    transition: 1s;
+}
+
 table {
     margin: auto;
 }
@@ -205,6 +206,18 @@ th:hover, td:hover {
     background-color: #fff;
     transition: 0.1s;
     animation: normal;
+}
+
+#aboutLists {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#aboutLists > div {
+    padding: 1rem;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes fadeInAndOut {
@@ -238,7 +251,7 @@ th:hover, td:hover {
     flex: 1; /* makes each card take equal width */
     background: linear-gradient(145deg, #1e1e2f, #2c2f33); /* sets a dark navy gradient background */
     color: #dcdcdc; /* light gray text color */
-    padding: 20px; /* adds padding inside each card */
+    padding: 30px; /* adds padding inside each card */
     border-radius: 20px; /* rounds the corners of the cards */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* adds a dark shadow for depth */
     min-width: 320px; /* prevents the card from getting too small on tiny screens */

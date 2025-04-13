@@ -168,12 +168,18 @@ figcaption {
     text-align: center;
 }
 
-figure > img {
+.groupPhoto {
     display: block;
     margin: auto;
     width: 50%;
     border: 2px solid black;
     border-radius: 10px;
+    transition: 0.5s;
+}
+
+.groupPhoto:hover {
+    width: 80%;
+    transition: 0.5s;
 }
 
 table {
@@ -409,27 +415,27 @@ select:focus {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
   
-  .member {
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease;
-  }
-  
-  .member:hover {
-    transform: translateY(-4px);
-  }
-  
-  dt {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 0.5rem;
-  }
-  
-  dd {
-    margin: 0;
-    color: #555;
-    line-height: 1.6;
-  }
+.member {
+background-color: #fff;
+border-radius: 12px;
+padding: 1.5rem;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+transition: transform 0.2s ease;
+}
+
+.member:hover {
+transform: translateY(-4px);
+}
+
+dt {
+font-size: 1.3rem;
+font-weight: 600;
+color: #2c3e50;
+margin-bottom: 0.5rem;
+}
+
+dd {
+margin: 0;
+color: #555;
+line-height: 1.6;
+}

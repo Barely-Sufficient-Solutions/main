@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Apply</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
+<<<<<<< HEAD
         <img src="images/logo3.png" alt="Logo" class="logo">
+=======
+        <!--<h1>EDC IT Solutions</h1> -->
+        <img src="images/logo3.svg" alt="Logo" class="logo">
+>>>>>>> ef281952ead026bd4c723420c03c624b632d0f36
         <nav>
             <ul>
                 <li><a href="index.html">Home🏡</a></li>
                 <li><a href="jobs.html">Jobs⚒️</a></li>
+<<<<<<< HEAD
                 <li><a href="apply.html">Apply✅</a>
+=======
+                <li><a href="#">Apply✅</a>
+>>>>>>> ef281952ead026bd4c723420c03c624b632d0f36
                 <span class="openEmailText">Opens email to "info@barelysufficientsolutions.com"</span>
                 </li>
                 <li><a href="about.html">About👯</a></li>
@@ -22,9 +32,17 @@
         </nav>
     </header>
     <main>
+<<<<<<< HEAD
         <h1>Apply</h1>
         <p>Apply if you don't want to be unemployed!</p>
         <form>
+=======
+        <a class='jobsLink' href="jobs.html">See more about our positions</a>
+        <h1 id="openPositionsTitle">Apply for our open position(s)</h1>
+        <hr>
+        
+        <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+>>>>>>> ef281952ead026bd4c723420c03c624b632d0f36
             <fieldset>
                 <legend>Job Reference Number</legend>
                 <label for="referencenumber">Select a Job Reference Number:</label>
@@ -33,13 +51,18 @@
                     <option value="2">SE456</option>
                 </select>
             </fieldset>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> ef281952ead026bd4c723420c03c624b632d0f36
             <!---PERSONAL DETAILS-->
             
             <fieldset>
                 <legend>Personal Details</legend>
                     <label for="firstname">First Name:</label>
                     <input type="text" name="firstname" id="firstname" maxlength="20" required>
+<<<<<<< HEAD
                 <br>
                 <label for="lastname">Last Name:</label>
                     <input type="text" name="lastname" id="lastname" maxlength="20" required>
@@ -109,6 +132,76 @@
         <p>&copy; Barely Sufficient Solutions - All rights reserved</p>
         <a href="https://charliewalker.atlassian.net/jira/software/projects/WDP/boards/34">Jira</a>
     </footer>
+=======
+                
+                <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname" maxlength="20" required>
+                
+                <label for="dob">Date Of Birth:</label>
+                    <input type="date" name="dob" id="dob" required>
+                <legend>Gender </legend>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other">Other</label> <br/> <br/>
+                <label for="streetaddress">Street Address:</label>
+                    <input type="text" name="streetaddress" id="streetaddress" maxlength="40" required>
+                
+                <label for="suburb">Suburb/Town:</label>
+                    <input type="text" name="suburb" id="suburb" maxlength="40">
+                
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="qld">QLD</option>
+                    <option value="nsw">NSW</option>
+                    <option value="vic">VIC</option>
+                    <option value="nt">NT</option>
+                    <option value="wa">WA</option>
+                    <option value="sa">SA</option>
+                    <option value="act">ACT</option>
+                    <option value="tas">TAS</option>
+                </select>
+            </fieldset>
 
+        <!---CONTACT DETAILS-->
+            
+            <fieldset>
+                <legend>Contact Details</legend>
+                    <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="\d{8,12}" required>
+            </fieldset>
+
+        <!---skills-->
+            <div class="skillsContainer">
+                <fieldset> 
+                    <legend>Skills</legend>
+                    <label><input type="checkbox" name="skills" value="html" required> HTML</label><br>
+                    <label><input type="checkbox" name="skills" value="css" required> CSS</label><br>
+                    <label><input type="checkbox" name="skills" value="javascript" required> JavaScript</label><br>
+                    <label><input type="checkbox" name="skills" value="python" required> Python</label><br>
+                    <label><input type="checkbox" name="skills" value="java" required> Java</label><br>
+                    <label><input type="checkbox" name="skills" value="sql" required> SQL</label><br>
+                    <label><input type="checkbox" name="skills" value="git" required> Git</label><br>
+                    <br>    
+            </div>
+        <label>Other Skills: <input type="text" name="other_skill"></label><br>
+            <br>
+>>>>>>> ef281952ead026bd4c723420c03c624b632d0f36
+
+        </fieldset>
+        <div class="submitContainer"><input type="submit" value='Apply✅' class="applyInput"/></div>
+        </form>
+    </main>
+        <footer>
+            <p>&copy; 2025 Barely Suficient Solutions Inc. All rights Reserved.</p>
+            <a href="https://charliewalker.atlassian.net/jira/software/projects/WDP/boards/34">Jira</a>
+        </footer>
 </body>
 </html>

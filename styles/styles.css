@@ -659,14 +659,15 @@ th:hover, td:hover {
 #jobs_page {
     display: flex; /* turns the container into a flexbox */
     justify-content: center; /* centers the two job cards horizontally */
-    gap: 30px; /* creates 30px space between the two cards */
+    gap: 1rem; /* creates 30px space between the two cards */
+    justify-content: center;
     margin: 40px auto; /* adds margin above and below, centers it horizontally */
     flex-wrap: wrap; /* allows cards to wrap under each other on small screens */
     max-width: 1200px; /* limits maximum width to avoid stretching too far */
 }
 
 #data_analyst, #software_engineer {
-    flex: 1; /* makes each card take equal width */
+    flex: 1 1 45%; /* makes each card take equal width */
     background: linear-gradient(145deg, #1e1e2f, #2c2f33); /* sets a dark navy gradient background */
     color: #dcdcdc; /* light gray text color */
     padding: 20px; /* adds padding inside each card */
@@ -728,7 +729,7 @@ th:hover, td:hover {
 
 @media (max-width: 900px) {
     #jobs_page {
-        flex-direction: column; /* stacks cards vertically on small screens */
+        flex-direction:  column; /* stacks cards vertically on small screens */
         align-items: center; /* centers the cards when stacked */
     }
 }
@@ -890,9 +891,9 @@ select:focus {
 
 #openPositionsTitle {
   color: #0a58ca; 
-  text-align: left; 
+  text-align: center; 
   font-size: 2.8rem; 
-  margin: 2rem 0 1rem; /* More space around heading */
+  margin: 2rem 0 1rem;  /*More space around heading*/
   font-weight: 800; 
   letter-spacing: 1px; 
 }

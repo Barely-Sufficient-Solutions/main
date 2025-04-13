@@ -409,27 +409,27 @@ select:focus {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
   
-  .member {
+.member {
     background-color: #fff;
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
-  }
-  
-  .member:hover {
+}
+
+.member:hover {
     transform: translateY(-4px);
-  }
-  
-  dt {
+}
+
+dt {
     font-size: 1.3rem;
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 0.5rem;
-  }
-  
-  dd {
+}
+
+dd {
     margin: 0;
     color: #555;
     line-height: 1.6;
-  }
+}

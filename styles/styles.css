@@ -663,7 +663,7 @@ th:hover, td:hover {
     flex: 1 1 45%; /* makes each card take equal width */
 }
 
-#data_analyst, #software_engineer {
+.data_analyst_card, .software_engineer {
     background: linear-gradient(145deg, #1e1e2f, #2c2f33); /* sets a dark navy gradient background */
     color: #dcdcdc; /* light gray text color */
     padding: 20px; /* adds padding inside each card */
@@ -676,7 +676,7 @@ th:hover, td:hover {
     overflow: hidden; /* hides anything that spills out (like glow animations) */
 }
 
-#data_analyst::before, #software_engineer::before {
+.data_analyst_card::before, #software_engineer::before {
     content: ""; /* creates an invisible element to use for hover glow */
     position: absolute; /* positions it relative to the card */
     top: -50%; /* moves it above the card */
@@ -848,17 +848,17 @@ select:focus {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
   
-  .member {
+.member {
     background-color: #fff;
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
-  }
+}
   
-  .member:hover {
+.member:hover {
     transform: translateY(-4px);
-  }
+}
   
   dt {
     font-size: 1.3rem;

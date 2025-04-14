@@ -189,6 +189,7 @@ figcaption {
     margin: auto;
     width: 50%;
     border: 2px solid black;
+    padding: 10px;
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -718,3 +719,5 @@ p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
+
+

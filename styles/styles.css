@@ -258,7 +258,7 @@ th:hover, td:hover {
     margin: 40px auto;
 }
 
-#data_analyst, #software_engineer {
+.data_analyst_card, .software_engineer {
     flex: 1;
     /* makes each card take equal width */
     background: linear-gradient(145deg, #1e1e2f, #2c2f33);
@@ -283,7 +283,7 @@ th:hover, td:hover {
     background: linear-gradient(145deg, #1e1e2f, #2c2f33);
 }
 
-#data_analyst::before, #software_engineer::before {
+.data_analyst_card::before, .software_engineer::before {
     content: "";
     /* creates an invisible element to use for hover glow */
     position: absolute;
@@ -305,11 +305,11 @@ th:hover, td:hover {
     opacity: 0;
 }
 
-#data_analyst:hover::before, #software_engineer:hover::before {
+.data_analyst_card:hover::before, .software_engineer:hover::before {
     opacity: 1;
 }
 
-#data_analyst:hover, #software_engineer:hover {
+.data_analyst_card:hover, .software_engineer:hover {
     transform: translateY(-10px) scale(1.02);
     /* lifts card up slightly and enlarges on hover */
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
@@ -356,6 +356,14 @@ th:hover, td:hover {
         align-items: center;
 }
 
+}
+.data_analyst_card, .software_engineer > p {
+    color: #dcdcdc;
+    /* light gray text color */
+    font-size: 1.1rem;
+    /* makes text a bit smaller */
+    line-height: 1.6;
+    /* adds space between lines of text */
 }
 
 /* Apply Page Specific Styles */
@@ -684,7 +692,14 @@ label {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s ease;
 }
-
+.indentText {
+    text-indent: 2rem;
+    margin: 0;
+    color: #dcdcdc;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-decoration: none;
+}
 .team dd {
     color: #dcdcdc;
     font-size: 1.1rem;
@@ -696,11 +711,6 @@ label {
     color: #0a58ca;
     font-size: 1.3rem;
     font-weight: 700;
-}
-
-main > section p:first-of-type,
-main > section p:nth-of-type(2) {
-    color: #000;
 }
 
 th {
